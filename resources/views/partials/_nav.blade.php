@@ -16,6 +16,18 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
       </ul>    
+
+      <ul class="nav navbar-nav navbar-right">
+            
+        @if(Auth::check())
+
+            <li>Hello {{ Auth::user()->name }}<span class="caret"></span></a></li>
+
+        @else
+            <a href="{{ route('login') }}" class="btn btn-default btn-login">Login</a>
+        @endif
+
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
