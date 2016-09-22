@@ -11,12 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TrackController@getIndex');
+
+Route::post('/', 'TrackController@PostTrack');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
 Route::resource('codes','CodesController');
+
