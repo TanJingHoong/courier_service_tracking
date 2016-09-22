@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('main')
+
+@section('title', '| Email Confirmation')
 
 <!-- Main Content -->
 @section('content')

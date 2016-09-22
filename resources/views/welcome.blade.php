@@ -1,10 +1,10 @@
 @extends('main')
 
-@section('title' , '| Home')
+@section('title' , '| Welcome')
 
 @section('content')
     
-
+    
 
 
 
